@@ -1,0 +1,6 @@
+name = "cache-for-pages"
+main = "worker/index.ts"
+compatibility_date = "2023-08-01"
+
+[vars]
+ORIGIN="https://remix-cloudflare-demo-8w0.pages.dev"
