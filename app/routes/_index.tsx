@@ -9,8 +9,12 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+const getNow = () => {
+  return ( new Date() ).toString()
+}
+
 export const loader = async ({ context }: LoaderFunctionArgs) => {
-  const dateTime = (new Date()).toLocaleString( 'ja-JP');
+  const dateTime = getNow();
   return json({ dateTime });
 };
 
